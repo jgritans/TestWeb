@@ -10,7 +10,7 @@
     <form>
         <p>Datums <input name="datums"></p>
         <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
-            <input onclick="datums.value=new Date();dienas.value=" name="poga" value="DATUMS" type="button">
+            <input onclick="datums.value=new Date();dienas.value=0" name="poga" value="DATUMS" type="button">
         </p>
         <p>Ja gribi uzzināt datumu pēc Y dienām, ievadi Y
             <input onchange="datums.value=new Date(new Date().getTime()+Number(dienas.value)*24*3600*1000);" name="dienas" value="0" type="number">
